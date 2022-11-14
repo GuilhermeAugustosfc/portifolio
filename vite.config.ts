@@ -4,5 +4,5 @@ import react from "@vitejs/plugin-react";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/portifolio/dist/",
+  base: "https://portifolio-kt81rfu5h-guilhermeaugustosfc.vercel.app/",
 });
