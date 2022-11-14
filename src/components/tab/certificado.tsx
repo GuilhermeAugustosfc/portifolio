@@ -47,7 +47,7 @@ export function Certificado({ visibleTabs }: WorksProps) {
           key={i}
           className={`tab-certificado-img`}
           src={images[i]}
-          alt="certificado flexbox"
+          alt={`certificado ${i}`}
         />
       ))}
     </div>
