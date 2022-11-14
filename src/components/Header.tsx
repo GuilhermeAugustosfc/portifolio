@@ -11,13 +11,19 @@ export function Header({ setVisibleTabs, visibleTabs }: HeaderProps) {
     about: false,
     skils: false,
     works: false,
+    certificado: false,
   };
   return (
     <div className="header">
       <a
         className={`${visibleTabs.home ? "tab-active" : ""}`}
         onClick={() =>
-          setVisibleTabs({ ...visibleTabs, ...defaultTabs, home: true })
+          setVisibleTabs({
+            ...visibleTabs,
+            ...defaultTabs,
+            content: true,
+            home: true,
+          })
         }
         href="#"
       >
@@ -26,7 +32,12 @@ export function Header({ setVisibleTabs, visibleTabs }: HeaderProps) {
       <a
         className={`${visibleTabs.about ? "tab-active" : ""}`}
         onClick={() =>
-          setVisibleTabs({ ...visibleTabs, ...defaultTabs, about: true })
+          setVisibleTabs({
+            ...visibleTabs,
+            ...defaultTabs,
+            content: true,
+            about: true,
+          })
         }
         href="#"
       >
@@ -35,7 +46,12 @@ export function Header({ setVisibleTabs, visibleTabs }: HeaderProps) {
       <a
         className={`${visibleTabs.skils ? "tab-active" : ""}`}
         onClick={() =>
-          setVisibleTabs({ ...visibleTabs, ...defaultTabs, skils: true })
+          setVisibleTabs({
+            ...visibleTabs,
+            ...defaultTabs,
+            content: true,
+            skils: true,
+          })
         }
         href="#"
       >
@@ -44,11 +60,31 @@ export function Header({ setVisibleTabs, visibleTabs }: HeaderProps) {
       <a
         className={`${visibleTabs.works ? "tab-active" : ""}`}
         onClick={() =>
-          setVisibleTabs({ ...visibleTabs, ...defaultTabs, works: true })
+          setVisibleTabs({
+            ...visibleTabs,
+            ...defaultTabs,
+            content: true,
+            works: true,
+          })
         }
         href="#"
       >
         Projects
+      </a>
+      <a
+        className={`${visibleTabs.certificado ? "tab-active" : ""}`}
+        onClick={() =>
+          setVisibleTabs({
+            ...visibleTabs,
+            ...defaultTabs,
+            content: false,
+            certificado: true,
+            certificadoNumber: 15,
+          })
+        }
+        href="#"
+      >
+        Certificado
       </a>
     </div>
   );

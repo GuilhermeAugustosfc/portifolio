@@ -1,33 +1,37 @@
+html,
+body,
 #root {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "League Spartan", sans-serif;
+  background-color: #181a1b;
+  width: 100vw;
+  height: 100vh;
+}
+.container-audio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+* {
+  transition: all 0.2s ease-in-out;
+}
 .audio {
   display: block;
   margin: 0 auto;
 }
 
-.main > .header {
-  margin-top: 92px;
-  margin-left: 290px;
-}
-
-.main > .container-content {
-  margin-top: 289px;
-  margin-left: 268px;
-}
-
-.container-content {
-  display: flex;
-  gap: 26em;
+.main {
+  padding-top: 92px;
+  height: 90vh;
 }
 
 .header {
   display: flex;
-  gap: 76px;
+  justify-content: center;
+  gap: 18px;
 }
 
 .header a {
@@ -36,7 +40,7 @@
   line-height: 24px;
   /* identical to box height */
   text-decoration: none;
-  color: #928a97;
+  color: #e3e3e3;
   transition: all 0.2s ease-in-out;
 }
 .header a:hover {
@@ -56,16 +60,23 @@
   text-shadow: 2px 1px 23px #3a3737;
   text-decoration: none !important;
 }
+
+.content {
+  display: flex;
+  margin-top: 4em;
+  margin-left: 2em;
+  flex-direction: column;
+}
 .content > .content-title {
   margin-bottom: 19px;
 }
 .content > .content-subtitle {
   margin-bottom: 38px;
 }
-.content {
-  gap: 26em;
-}
+
 .content-title {
+  transition: all 0.2s ease-in-out;
+
   font-family: "Spartan";
   font-style: normal;
   font-weight: 800;
@@ -73,37 +84,33 @@
   line-height: 51px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-
-  border: 1.69px dashed #ffffff;
+  color: white;
+  border: 1.69px dashed rgb(48, 52, 54);
 }
 
 .content-subtitle {
+  transition: all 0.2s ease-in-out;
+
   font-family: "Spartan";
   font-style: normal;
   font-weight: 600;
   font-size: 28.5333px;
   line-height: 32px;
 
-  color: #565656;
+  color: rgb(178, 171, 161);
 }
 
 .content-midia-social {
   display: flex;
   gap: 21px;
+  color: white;
+  cursor: pointer;
 }
-
-.tab-content {
-  width: 43em;
-  height: 41em;
-  color: #f0f0f0;
-  border: 1px solid black;
-  transform: translateY(-16em);
-  box-shadow: rgb(53 57 59 / 80%) 3px 3px 0px 0px;
-  overflow: hidden;
+.content-midia-social > a {
+  color: white;
 }
 
 .tab-home {
-  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -111,120 +118,143 @@
 }
 
 .tab-home-content-title {
+  transition: all 0.2s ease-in-out;
+
   font-family: "Spartan";
   font-style: normal;
   font-weight: 800;
-  font-size: 38.1778px;
+  font-size: 2.1em;
   text-align: center;
-  color: #392121;
+  color: #ffffff;
   line-height: 45px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  margin-bottom: 50px;
-  margin-top: 74px;
+  margin-bottom: 61px;
+  margin-top: 120px;
 }
 
 .tab-home-content-subtitle {
+  transition: all 0.2s ease-in-out;
+
   font-family: "Spartan";
   font-size: 23px;
   text-align: center;
-  color: #392121;
-  line-height: 45px;
+  line-height: 31px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   margin-bottom: 10px;
-  width: 100%;
+  color: #ffffff;
 }
 
 .tab-home > img {
   width: 100%;
-  height: 381px;
-}
-
-.tab-about {
-  padding: 10px;
-}
-
-.tab-about img {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  margin: 0 auto;
-  display: block;
-  box-shadow: 2px 2px 1px 2px black;
-  margin-top: 32px;
+  height: 387px;
 }
 
 .tab-about-subtitle {
-  font-family: "Spartan";
-  font-size: 23px;
-  line-height: 35px;
-  letter-spacing: 0.08em;
+  font-size: 26px;
+  line-height: 31px;
   margin-top: 10px;
-  color: black;
+  color: rgb(249 249 249);
   padding: 25px;
+}
+
+.tab-about img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: block;
+  float: right;
+  margin: 24px 5px 5px 0px;
 }
 
 .tab-about-icons {
   display: flex;
   justify-content: center;
-  padding: 0 25px;
-  gap: 20px;
+  padding: 45px 25px;
+  gap: 100px;
 }
 
 .tab-about-icons > svg {
-  color: black;
+  color: #969d88;
+  transform: scale(1.5);
 }
 
 .tab-skill {
-  padding: 20px;
+  padding: 51px 26px;
+  text-align: justify;
+  font-size: 24px;
 }
 
 .tab-skill-title {
-  font-family: "Spartan";
   font-style: normal;
   font-weight: 800;
   font-size: 38.1778px;
   text-align: center;
-  color: #392121;
+  color: #ffffff;
   line-height: 45px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   margin-bottom: 15px;
-  text-decoration: underline;
 }
 
 .tab-skill-content {
-  font-size: 25px;
+  font-size: 20px;
   line-height: 37px;
   letter-spacing: 0.07em;
-  color: #565656;
+  color: rgb(231 231 231);
 }
 
 .tab-skill-icons {
-  font-size: 65px;
+  font-size: 71px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 57px;
+  gap: 17px;
   margin-top: 20px;
 }
 
 .tab-skill-icons > svg {
-  border: 1px solid black;
-  box-shadow: 3px 3px 1px 1px black;
   cursor: pointer;
   transition: all 0.2s ease-in;
 }
 
 .tab-works {
-  padding: 20px;
+  padding: 15px;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+}
+.zoom {
+  border: none !important;
+  box-shadow: 2px 2px 2px 2px lightgreen !important;
+}
+.tab-works > div {
+  height: 193px;
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  color: white;
+  width: 100%;
 }
 
-.tab-works > div {
-  width: 300px;
-  border: 1px solid black;
+.tab-works > div > a {
+  display: block;
+  margin: 0 auto;
+  color: #e5e5e5;
+  text-decoration: none;
+}
+
+.tab-works > div > a:hover {
+  text-decoration: underline;
+}
+.container-certificado {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.tab-certificado-img {
+  transition: all 0.2s ease-in-out;
+
+  width: 33%;
 }

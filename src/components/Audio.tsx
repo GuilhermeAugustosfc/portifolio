@@ -12,8 +12,9 @@ export const AudioComponent = React.forwardRef(
   ) => {
     return (
       <div
+        className="container-audio"
         style={{
-          display: `${visibleAudio ? "block" : "none"}`,
+          display: `${visibleAudio ? "flex" : "none"}`,
         }}
       >
         <audio autoPlay onTimeUpdate={onTimeUpdate} ref={ref} controls>
