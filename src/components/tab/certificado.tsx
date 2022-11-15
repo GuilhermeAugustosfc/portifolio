@@ -1,9 +1,9 @@
 import { visibleTabsProps } from "../../App";
 
-import Codgniter1 from "../../assets/codgniter1.png";
-import FlexboxImg from "../../assets/flexbox.png";
 import GitImg from "../../assets/git.png";
 import HtmlCssImg from "../../assets/htmlcss.png";
+import FlexboxImg from "../../assets/flexbox.png";
+import Codgniter1 from "../../assets/codgniter1.png";
 import HtmlCss1Img from "../../assets/htmlcss2.png";
 import JavascriptImg from "../../assets/javascript.png";
 import MongoImg from "../../assets/mongo.png";
