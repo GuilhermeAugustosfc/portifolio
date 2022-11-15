@@ -1,7 +1,8 @@
 import { visibleTabsProps } from "../../App";
 
-import GitImg from "../../assets/git.png";
+import Codgniter1 from "../../assets/codgniter1.png";
 import FlexboxImg from "../../assets/flexbox.png";
+import GitImg from "../../assets/git.png";
 import HtmlCssImg from "../../assets/htmlcss.png";
 import HtmlCss1Img from "../../assets/htmlcss2.png";
 import JavascriptImg from "../../assets/javascript.png";
@@ -15,7 +16,6 @@ import phpmysql2 from "../../assets/phpmysql2.png";
 import dessigpatter1 from "../../assets/dessigpatter1.png";
 import dessigpatter2 from "../../assets/dessigpatter2.png";
 import codgniter2 from "../../assets/codgniter2.png";
-import codgniter1 from "../../assets/codgniter1.png";
 // import Eu from "../../assets/linkedimimage.jpg";
 
 interface WorksProps {
@@ -36,7 +36,7 @@ export function Certificado({ visibleTabs }: WorksProps) {
     HtmlCss1Img,
     dessigpatter1,
     dessigpatter2,
-    codgniter1,
+    Codgniter1,
     codgniter2,
   ];
 
