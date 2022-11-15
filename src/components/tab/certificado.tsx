@@ -1,7 +1,7 @@
 import { visibleTabsProps } from "../../App";
 
-import FlexboxImg from "../../assets/flexbox.png";
 import GitImg from "../../assets/git.png";
+import FlexboxImg from "../../assets/flexbox.png";
 import HtmlCssImg from "../../assets/htmlcss.png";
 import HtmlCss1Img from "../../assets/htmlcss2.png";
 import JavascriptImg from "../../assets/javascript.png";
