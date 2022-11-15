@@ -12,6 +12,7 @@ export function Header({ setVisibleTabs, visibleTabs }: HeaderProps) {
     skils: false,
     works: false,
     certificado: false,
+    obrigado: false,
   };
   return (
     <div className="header">

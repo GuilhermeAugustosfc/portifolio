@@ -32,11 +32,12 @@ body,
   display: flex;
   justify-content: center;
   gap: 18px;
+  padding: 0px 12px;
 }
 
 .header a {
   font-weight: 500;
-  font-size: 21.4px;
+  font-size: 1.1em;
   line-height: 24px;
   /* identical to box height */
   text-decoration: none;
@@ -67,15 +68,14 @@ body,
   margin-left: 2em;
   flex-direction: column;
 }
-.content > .content-title {
-  margin-bottom: 19px;
-}
+
 .content > .content-subtitle {
   margin-bottom: 38px;
 }
 
 .content-title {
   transition: all 0.2s ease-in-out;
+  margin-bottom: 19px;
 
   font-family: "Spartan";
   font-style: normal;
@@ -226,12 +226,13 @@ body,
 }
 .zoom {
   border: none !important;
-  box-shadow: 2px 2px 2px 2px lightgreen !important;
+  font-size: 1.3em !important;
 }
 .tab-works > div {
   height: 193px;
   transition: all 0.2s ease-in-out;
   text-align: center;
+  font-size: 10px;
   display: flex;
   align-items: center;
   color: white;
@@ -257,4 +258,87 @@ body,
   transition: all 0.2s ease-in-out;
 
   width: 33%;
+}
+
+.container-icons {
+  margin-top: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.obrigado {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 38.1778px;
+  text-align: center;
+  color: #ffffff;
+  line-height: 45px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-top: 5em;
+}
+
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+
+  .content-title,
+  .content-subtitle,
+  .obrigado {
+    text-align: center;
+  }
+
+  .content-midia-social {
+    justify-content: center;
+  }
+  .header > a,
+  .header > a:hover {
+    font-size: 2em;
+    text-decoration: none;
+  }
+  .obrigado {
+    font-size: 3em;
+  }
+
+  .tab-about img {
+    width: 250px;
+    height: 250px;
+    margin: 2em auto;
+    float: none;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+
+  .tab-skill-content {
+    font-size: 1em;
+    line-height: 28px;
+    letter-spacing: 0.07em;
+  }
+
+  .tab-skill-icons {
+    font-size: 8em;
+    gap: 17px;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+  }
+  .container-certificado {
+    padding: 0 22px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3em;
+  }
+  .tab-certificado-img {
+    width: 20%;
+  }
+
+  .tab-certificado-img:hover {
+    transform: scale(1.5);
+  }
+
+  .tab-skill-icons > svg:hover {
+    transform: rotate(360deg);
+  }
 }
